@@ -49,3 +49,24 @@ The version of the open content data that Chorus provides has the following chan
 * Data converted to JSON format.
 * Products that don't have a 500x500 pixel image listed are removed.
 * Prices extracted for ~19,000 products from the https://www.upcitemdb.com/ service using EAN codes to match.
+
+# Production readiness / status
+
+* "Chorus Electronics" store:
+  * Demo, you'll build your own
+* Solr (with Querqy integration:
+  * solrconfig / Query setup: complete / production ready
+  * solrconfig / autosuggest: incomplete, demo
+  * schema / data model: demo - misses e.g. inventory, does not cover "variants", i18n / multi-language search; could be a good starting point
+* SMUI:
+  * Complete setup, production ready
+* Quepid:
+  * Complete setup, production ready
+* RRE:
+  * Complete setup, production ready
+* Runtime / deployment:
+  * Demo (docker-compose) - it's up to you how to deploy/manage the components
+
+## Typical building blocks not covered:
+* Online analytics and extraction of search relevance information from the data
+* Indexing / data preparation
